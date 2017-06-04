@@ -1,0 +1,55 @@
+	td, 
+	th {
+		text-align: center;
+	}
+	
+	tr {
+		height: 50px;
+	}
+	
+	form {
+		text-align: center;
+	}
+	
+	input {
+		width: 30%;
+	}
+
+	.data-input{
+ 	 width: 100%;
+  	 float: left;
+  	 display: block;
+	}
+
+	span{
+		display: block;
+	}
+
+	.contact-info {
+		width: 60%; 
+		margin: 0px auto;
+	}
+
+	img{
+		display: block;
+    	margin: 0 auto;
+		width: 80%;
+	}
+
+	#home-info{
+		text-align: center;
+	}
+
+	address{
+		text-align: justify;
+	}
+
+	.navbar{
+		position: fixed;
+		width: 100%;
+	}
+
+	.container{
+		padding-top:40px;
+	}
+

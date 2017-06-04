@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Коли БГ</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/customStyles.css">
+	<script src="../libs/list.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../libs/jquery.min.js"></script>
+	<script src="../libs/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default main-menu">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="mynav">
+				<ul id="menu" class="nav navbar-nav">
+					<li><a href="home.html" class="navbar-brand">Начало</a></li>
+					<li><a href="cars.html" class="navbar-brand">Коли</a></li>
+					<li><a href="contacts.html" class="navbar-brand">За контакти</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h3>Добавяне на кола: </h3>
+		<div class="form-group">
+			<form id="add_form" class="well">
+				<label>
+						<span>Модел:</span>
+						<input id="model" type="text" name="model" class="data-input">
+					</label>
+				<label>
+						<span>Година:</span>
+						<input id="year" type="text" name="year" class="data-input">
+					</label>
+				<label>
+						<span>Описание:</span>
+						<input id="description" type="text" name="description" class="data-input">
+					</label>
+				<br><br><br>
+				<input id='add-car-btn' type="submit" value="Добави" class="btn btn-primary">
+			</form>
+		</div>
+		<h3>Промяна на кола:</h3>
+		<div class="form-group">
+			<form id="edit_form" class="well">
+				<label>
+					<span>Модел:</span>
+					<input id="edit_model" type="text" name="model" class="data-input">
+				</label>
+				<label>
+					<span>Година:</span>
+					<input id="edit_year" type="text" name="year" class="data-input">
+				</label>
+				<label>
+					<span>Описание:</span>
+					<input id="edit_description" type="text" name="description" class="data-input">
+				</label>
+				<br><br><br>
+				<input id="update_button" type="submit" value="Промени" class="btn btn-primary">
+			</form>
+			<br>
+			<h3>Търсене:</h3>
+			<div class="well">
+				<form>
+					<input list="models" name="models">
+					<datalist id="models"></datalist>
+					<input id='filter-by-model-btn' class="btn-success" type="submit" value="По модел">
+				</form>
+				<form>
+					<input list="years" name="years">
+					<datalist id="years"></datalist>
+					<input id="filter-by-year-btn" class="btn-success" type="submit" value="По година">
+				</form>
+				<br>
+				<form>
+					<input id="restore-table-btn" type="submit" value="Изчисти" class="btn btn-warning">
+				</form>
+			</div>
+		</div>
+		<div id="table"></div>
+	</div>
+	<script src="../JS/Car.js"></script>
+	<script src="../JS/CarRepository.js"></script>
+	<script src="../JS/AppModule.js"></script>
+</body>
+
+</html>
